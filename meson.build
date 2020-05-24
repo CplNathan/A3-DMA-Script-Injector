@@ -42,10 +42,12 @@ thread = meson.get_compiler('c').find_library('pthread', required : false)
 
 base_files = ['vmread/mem.c', 'vmread/wintools.c', 'vmread/pmparser.c']
 hlapi_files = ['vmread/hlapi/windll.cpp', 'vmread/hlapi/winprocess.cpp', 'vmread/hlapi/winprocesslist.cpp']
+inccustomlibs = [include_directories('.'), include_directories('vmread'), include_directories('a3')]
 
 injector = executable(
-	'A3Injector',
-	files(base_files + ['main.cpp', 'vmread/vmmem.c'] + hlapi_files),
+  'A3Injector',
+  files(base_files + ['main.cpp', 'a3/a3main.cpp', 'vmread/vmmem.c'] + hlapi_files),
+  include_directories : [inccustomlibs],
   c_args : c_compile_args + compile_args + compile_args_external,
   cpp_args : cpp_compile_args + compile_args + compile_args_external,
   link_args : compile_args + compile_args_external + link_args + link_args_external
