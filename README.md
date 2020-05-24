@@ -21,5 +21,7 @@ See the resources section for more information on setting up an environment.
 
 ## Resources
 https://www.youtube.com/watch?v=SsgI1mkx6iw
+
 https://www.reddit.com/r/VFIO/comments/f15cok/how_to_setup_kvm_for_gaming/
+
 https://www.mathiashueber.com/fighting-error-43-nvidia-gpu-virtual-machine/
