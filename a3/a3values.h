@@ -6,7 +6,7 @@
 
 namespace Arma3
 {
-    std::vector<std::string> anticheatterms{"infiSTAR", "cheat", "infistar", "hacker", "spanker", "faggot", "menucheat", "createTask = 'STR';", "(findDisplay 46)closeDisplay 0", "BAN", "KICK", "(findDisplay 0)closeDisplay 0", "illegal", "_worldspace = player getVariable['AHworldspace',[]];", "PVAHR_0", "_puid = _this select 0;_name = _this select 1;", "_btnSave ctrlSetText 'PlayerUID:';", "SPY-GLASS", "he/she was trying to access commanding menu", "SPYGLASS-FLAG", "SpyGlass", "SPY_fnc_notifyAdmins", "SPY_fnc_cookieJar", "MenuBasedHack", "Cheater Flagged", "STAR", "infi"};
+    std::vector<std::string> anticheatterms{"infiSTAR", "cheat", "infistar", "hacker", "spanker", "faggot", "menucheat", "createTask = 'STR';", "(findDisplay 46)closeDisplay 0", "BAN", "KICK", "(findDisplay 0)closeDisplay 0", "illegal", "_worldspace = player getVariable['AHworldspace',[]];", "PVAHR_0", "_puid = _this select 0;_name = _this select 1;", "_btnSave ctrlSetText 'PlayerUID:';", "SPY-GLASS", "he/she was trying to access commanding menu", "SPYGLASS-FLAG", "SpyGlass", "SPY_fnc_notifyAdmins", "SPY_fnc_cookieJar", "MenuBasedHack", "Cheater Flagged", "STAR", "infi", "AH", "RANDVAR", "_log"};
 
     const struct Offsets
     {

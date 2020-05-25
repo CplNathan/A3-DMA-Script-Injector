@@ -141,10 +141,11 @@ void a3::AnticheatKiller(WinProcess *armaProc, uint64_t l_armaBase)
         std::string result = l_ArmaString.ReadString();
         for (int i = 0; i < (int)Arma3::anticheatterms.size(); i++)
         {
-            if (result.find(Arma3::anticheatterms[i]) != std::string::npos)
+            std::string curTerm = Arma3::anticheatterms[i];
+            if (result.find(curTerm) != std::string::npos)
             {
                 armaProc->Write(l_script + 0x508, true);
-                printf("Disabling anticheat thread at index %d for term %s\n", i, Arma3::anticheatterms[i].c_str());
+                printf("Disabling anticheat thread at index %d for term %s\n", i, curTerm.c_str());
                 break;
             }
         }
