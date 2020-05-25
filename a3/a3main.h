@@ -59,7 +59,9 @@ struct ArmaStringRestore
         this->armaProc = armaProc;
     
         this->RefArmaString = InArmaString;
-        this->SavedString = RefArmaString.ReadString();
+        this->SavedString = InArmaString.ReadString();
+
+        this->IsValid = true;
     }
     
     void Restore()
@@ -68,7 +70,7 @@ struct ArmaStringRestore
             return;
 
         RefArmaString.WriteString(SavedString);
-        IsValid = false;
+        this->IsValid = false;
     }
 };
 
