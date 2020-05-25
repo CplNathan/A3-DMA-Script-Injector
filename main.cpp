@@ -7,7 +7,7 @@
 #include <iostream>
 
 const char *argp_program_version =
-    "V4";
+    "V4.1";
 const char *argp_program_bug_address =
     "https://www.unknowncheats.me/forum/arma-3-a/343712-external-eh-script-injector.html";
 
@@ -15,7 +15,6 @@ static char doc[] =
     "ArmA 3 Script Injector - https://github.com/CplNathan/A3-DMA-Script-Injector\n"
     "VMRead - https://github.com/Heep042/vmread"
     "\v"
-    "./injector dump -d [DIR]\n"
     "./injector inject -s [SCRIPT] -i -r -f";
 
 static char args_doc[] =
@@ -24,7 +23,7 @@ static char args_doc[] =
 static struct argp_option options[] = {
     {"noinfistar", 'i', 0, OPTION_ARG_OPTIONAL, "Kills anti-cheat threads", 1},
     {"restorehook", 'r', 0, OPTION_ARG_OPTIONAL, "Restores script hook after inject", 1},
-    {"filepatching", 'f', 0, OPTION_ARG_OPTIONAL, "Enabled file patching", 1},
+    {"filepatching", 'f', 0, OPTION_ARG_OPTIONAL, "Enables file patching", 1},
     {"scriptsource", 's', "FILE", 0, "Script source location", 1},
     {0}};
 

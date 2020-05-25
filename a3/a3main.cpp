@@ -38,9 +38,6 @@ void a3::init(arguments arguments, std::string scriptcontent)
             // Script Injection
             ArmaStringRestore Restore = InjectScript(ArmaProc, l_armaBase, scriptcontent);
 
-            if (!Restore.IsValid) // Failed to inject
-                return;
-
             // Restore countdown
             uint64_t timeStart = clock();
             int lastRestoreUI = 30;
