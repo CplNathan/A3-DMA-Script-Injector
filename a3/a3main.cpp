@@ -23,6 +23,9 @@ void a3::init(arguments arguments, std::string scriptcontent)
 
         if (l_armaBase && l_battleyeBase)
         {
+            if (arguments.noinfistar)
+                    AnticheatKiller(ArmaProc, l_armaBase);
+            
             if (arguments.filepatching)
             {
                 if (FilepatchingEnable(ArmaProc, l_armaBase))
