@@ -27,18 +27,6 @@ static struct argp_option options[] = {
     {"scriptsource", 's', "FILE", 0, "Script source location", 1},
     {0}};
 
-uint64_t restoreTime = 30;
-
-// ----- Beep Boop ----- //
-uint64_t g_armaBase;
-uint64_t g_battleyeBase;
-
-std::string g_scriptData;
-
-uint64_t g_NetworkManager;
-uint64_t g_NetworkClient;
-uint64_t g_NetworkCallback;
-
 static error_t parse_opt(int key, char *arg, struct argp_state *state)
 {
     struct arguments *arguments = static_cast<struct arguments *>(state->input);
